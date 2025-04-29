@@ -58,7 +58,7 @@ namespace Cabaluna
         public int showCount(int c,string val)
         {
 
-            book.LoadFromFile(@"C:\Users\ACT-STUDENT\Desktop\Book.xlsx");
+            book.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\Cabaluna\Book.xlsx");
             Worksheet sheet = book.Worksheets[0];
 
             int row = sheet.Rows.Length;

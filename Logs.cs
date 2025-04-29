@@ -22,7 +22,7 @@ namespace Cabaluna
         private void LoadLogsData()
         {
             Workbook book = new Workbook();
-            book.LoadFromFile(@"C:\Users\ACT-STUDENT\Desktop\Book.xlsx");
+            book.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\Cabaluna\Book.xlsx");
             Worksheet sheet = book.Worksheets[1];
 
             DataTable dt = new DataTable();

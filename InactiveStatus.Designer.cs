@@ -33,7 +33,6 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.dgvInactive = new System.Windows.Forms.DataGridView();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInactive)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +64,7 @@
             this.btnDelete.TabIndex = 16;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // dgvInactive
             // 
@@ -84,18 +84,6 @@
             this.btnAdd.TabIndex = 19;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.Red;
-            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnClose.ForeColor = System.Drawing.Color.Black;
-            this.btnClose.Location = new System.Drawing.Point(779, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(22, 23);
-            this.btnClose.TabIndex = 20;
-            this.btnClose.Text = "X";
-            this.btnClose.UseVisualStyleBackColor = false;
             // 
             // btnSearch
             // 
@@ -117,9 +105,7 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.dgvInactive);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSearch);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InactiveStatus";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InactiveStatus";
@@ -137,7 +123,6 @@
         private System.Windows.Forms.Button btnDelete;
         public System.Windows.Forms.DataGridView dgvInactive;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnSearch;
     }
 }
